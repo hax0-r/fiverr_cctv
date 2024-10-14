@@ -14,7 +14,19 @@ const Slider = () => {
                 slidesPerView={5}
                 spaceBetween={10}
                 className="mySwiper"
+                breakpoints={{
+                    320: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                    },
+                    1024: {
+                        slidesPerView: 5,
+                    },
+                }}
             >
+
                 <SwiperSlide>
                     <div className="">
                         <div className="bg-[#FFFFFF1A] w-full rounded-t-md border border-b-0 border-zinc-600">
